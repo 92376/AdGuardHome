@@ -108,7 +108,7 @@
     - 'name': 'Set up Docker Buildx'
       'uses': 'docker/setup-buildx-action@v1'
     - 'name': 'Run snapshot build'
-      'run': 'make SIGN=0 VERBOSE=1 js-deps js-build build-release build-docker'
+      'run': 'make SIGN=0 VERBOSE=1 build-release build-docker'
 
   'notify':
     'needs':
